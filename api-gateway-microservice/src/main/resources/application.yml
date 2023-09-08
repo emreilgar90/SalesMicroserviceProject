@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: http://192.168.1.25:8888
+  config:
+    import: "configserver:"
+  application:
+    name: api-gateway-application

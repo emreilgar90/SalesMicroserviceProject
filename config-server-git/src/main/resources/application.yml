@@ -1,0 +1,16 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server-git
+  cloud:
+    config:
+      server:
+        git:
+          uri: "https://github.com/emreilgar90/CloudConfigRepoYml.git"
+          default-label: main
+          #main git de oluşturduğum repo'nun branch adı.
+          skip-ssl-validation: true
+          username: emreilgar90
+          password: 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

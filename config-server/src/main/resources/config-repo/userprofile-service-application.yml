@@ -1,0 +1,25 @@
+server:
+  port: 9093
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username : java4
+    password : root
+  zipkin:
+    enable: true
+    base-url: http://localhost:9411
+    service:
+      name: userprofile-service
+  data:
+   mongodb:
+     host: 34.159.164.225
+     port: 27777
+     database: Java4Db
+     username: root
+     password: root
+
+myapplication:
+  feignclient:
+    elasticsearch: http://localhost:9100/userprofile

@@ -1,0 +1,22 @@
+type UserProfile{
+    id:ID
+    userid: String
+    authid: Int #graphql de Long olmadığından Int
+    username: String
+    profileimage: String
+
+    #Burada ki tüm fieldları UserProfile dan aldık, "!" olmayada bilir demek
+}
+input UserProfileInput{
+    authid: Int!
+    username: String!
+    profileimage: String!
+}
+
+type Query{                  #return type olduğu için yukarıda type UserProfile olarak tanılamadım
+    findall: [UserProfile]
+    findByUsername(username: String!) :UserProfile  #tek bir kayıt döndüğü için [] yapmadık
+}
+type Mutation{             #input olduğu için input olarak yukarıda tanımladım UserProfileInput olarak
+    createUserProfile(userinput: UserProfileInput!): Boolean
+}

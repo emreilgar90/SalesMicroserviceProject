@@ -1,0 +1,11 @@
+rootProject.name = 'Java4MSNew'
+include 'auth-microservice'
+include 'userprofile-microservice'
+include 'product-microservice'
+include 'sales-microservice'
+include 'config-server'
+include 'config-server-git'
+include 'api-gateway-microservice'
+include 'elastic-service'
+include 'elastic-service'
+
