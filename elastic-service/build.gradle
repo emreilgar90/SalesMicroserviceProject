@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.emre'
+version = 'unspecified'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation libs.springBootDataElasticsearch
+    implementation libs.graphiqlSpringStarter
+    implementation libs.graphqlSpringStarter
+    implementation libs.graphqlJavaTools
+
+}
+

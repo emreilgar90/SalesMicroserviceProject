@@ -1,0 +1,12 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$versions.springBoot")
+    }
+}
+
+dependencies {
+    implementation libs.springCloudConfigClient  //config bilgisini çekeceği config server dan alması içinekledim
+    implementation libs.springCloudGateway
+    implementation libs.springCloudCircutBreaker      //gateway hataları için devre kesici
+    implementation libs.springCloudCircutBreakerReactor //gateway hataları için devre kesici
+}
